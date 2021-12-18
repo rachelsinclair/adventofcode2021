@@ -65,10 +65,10 @@ class TestGetListOfSumsOfTuples(unittest.TestCase):
     def test_empty_list_returns_empty_list(self):
         self.assertEqual(get_list_of_sums_of_tuples([]), [])
     
-    def test_list_with_length_3_returns_a_single_tuple(self):
+    def test_list_with_single_tuple_returns_list_of_single_int(self):
         self.assertEqual(get_list_of_sums_of_tuples([(1,2,3)]), [6])
 
-    def test_list_with_length_4_returns_two_tuples(self):
+    def test_list_with_two_tuples_returns_list_of_two_ints(self):
         self.assertEqual(get_list_of_sums_of_tuples([(1,2,3), (2,3,4)]), [6, 9])
 
 if __name__ == "__main__":
